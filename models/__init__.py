@@ -1,18 +1,18 @@
-from app.models.company import Company
-from app.models.provider import Provider
-from app.models.role import Role
-from app.models.permission import Permission
-from app.models.module import Module
-from app.models.role_module_permission import RoleModulePermission
-from app.models.user import User
-from app.models.solped import Solped
-from app.models.attachment import Attachment
-from app.models.invoice import Invoice
-from app.models.contract import Contract
-from app.models.monthly_payment import MonthlyPayment
-from app.models.license import License
-from app.models.computer_leasing import ComputerLeasing
-from app.models.printer_leasing import (
+from models.company import Company
+from models.provider import Provider
+from models.role import Role
+from models.permission import Permission
+from models.module import Module
+from models.role_module_permission import RoleModulePermission
+from models.user import User
+from models.solped import Solped
+from models.attachment import Attachment
+from models.invoice import Invoice
+from models.contract import Contract
+from models.monthly_payment import MonthlyPayment
+from models.license import License
+from models.computer_leasing import ComputerLeasing
+from models.printer_leasing import (
     CostCenter,
     PecuariaCompany,
     PrinterAllocation,
@@ -20,9 +20,9 @@ from app.models.printer_leasing import (
     PrinterConsumptionCompany,
     PrinterInvoice,
 )
-from app.models.budget import Budget, BudgetMovement
-from app.models.notification import Notification, NotificationRecipient
-from app.models.servicio_producto import ServicioProducto
+from models.budget import Budget, BudgetMovement
+from models.notification import Notification, NotificationRecipient
+from models.servicio_producto import ServicioProducto
 
 __all__ = [
     "Company",
