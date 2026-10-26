@@ -3,7 +3,7 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, computed_field
 
-from app.services.contract_service import compute_contract_estado, compute_meses_faltantes
+from services.contract_service import compute_contract_estado, compute_meses_faltantes
 
 
 class ContractBase(BaseModel):
