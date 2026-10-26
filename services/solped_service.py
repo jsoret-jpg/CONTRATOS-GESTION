@@ -1,8 +1,8 @@
 from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
 
-from app.models.servicio_producto import ServicioProducto
-from app.models.solped import Solped
+from models.servicio_producto import ServicioProducto
+from models.solped import Solped
 
 
 def query_solpeds(
