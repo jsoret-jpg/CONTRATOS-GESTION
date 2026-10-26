@@ -5,9 +5,9 @@ import pandas as pd
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.imports.common import clean_str, normalize_match_key, parse_date_flexible, parse_decimal_flexible
-from app.models.company import Company
-from app.models.license import License
+from imports.common import clean_str, normalize_match_key, parse_date_flexible, parse_decimal_flexible
+from models.company import Company
+from models.license import License
 
 EXPECTED_COLUMNS = [
     "empresa",
