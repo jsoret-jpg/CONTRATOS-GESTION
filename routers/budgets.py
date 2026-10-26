@@ -4,13 +4,13 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import get_current_user, require_permission
-from app.models.budget import Budget, BudgetMovement
-from app.models.company import Company
-from app.models.servicio_producto import ServicioProducto
-from app.models.user import User
-from app.schemas.budget import (
+from database import get_db
+from dependencies import get_current_user, require_permission
+from models.budget import Budget, BudgetMovement
+from models.company import Company
+from models.servicio_producto import ServicioProducto
+from models.user import User
+from schemas.budget import (
     AnnualBudgetOut,
     AnnualBudgetUpsert,
     BudgetCreate,
