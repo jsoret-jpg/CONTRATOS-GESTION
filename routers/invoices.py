@@ -2,12 +2,12 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import require_permission
-from app.models.invoice import Invoice
-from app.models.solped import Solped
-from app.schemas.invoice import InvoiceCreate, InvoiceOut, InvoiceUpdate
-from app.services.budget_service import sync_solped_execution_from_invoices
+from database import get_db
+from dependencies import require_permission
+from models.invoice import Invoice
+from models.solped import Solped
+from schemas.invoice import InvoiceCreate, InvoiceOut, InvoiceUpdate
+from services.budget_service import sync_solped_execution_from_invoices
 
 router = APIRouter(prefix="/solpeds/{solped_id}/facturas", tags=["facturas"])
 
