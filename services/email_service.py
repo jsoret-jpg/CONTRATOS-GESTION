@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.config import settings
-from app.models.notification import Notification
+from config import settings
+from models.notification import Notification
 
 
 def send_email(to_addresses: list[str], subject: str, body: str) -> tuple[bool, str]:
