@@ -1,8 +1,8 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.contract import Contract
-from app.utils.date_estado import compute_estado, compute_meses_faltantes
+from models.contract import Contract
+from utils.date_estado import compute_estado, compute_meses_faltantes
 
 __all__ = ["compute_estado", "compute_contract_estado", "compute_meses_faltantes", "query_contracts"]
 
