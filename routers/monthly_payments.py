@@ -22,7 +22,7 @@ from schemas.monthly_payment import (
     MonthlyPaymentSummary,
     MonthlyPaymentUpdate,
 )
-from app.services.monthly_payment_service import (
+from services.monthly_payment_service import (
     checklist_completo,
     compute_estado,
     compute_porcentaje,
