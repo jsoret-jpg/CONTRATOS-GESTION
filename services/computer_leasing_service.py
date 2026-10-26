@@ -1,8 +1,8 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.computer_leasing import ComputerLeasing
-from app.utils.renovacion_calculator import compute_dias_para_renovacion, compute_renovacion_estado
+from models.computer_leasing import ComputerLeasing
+from utils.renovacion_calculator import compute_dias_para_renovacion, compute_renovacion_estado
 
 
 def query_computer_leasing(
