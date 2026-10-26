@@ -7,14 +7,14 @@ from fastapi.responses import StreamingResponse
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import get_current_user, require_permission
-from app.exports.templates import build_data_workbook, build_template_workbook
-from app.imports.license_import import EXPECTED_COLUMNS, validate_and_prepare
-from app.models.company import Company
-from app.models.license import License
-from app.models.user import User
-from app.schemas.license import (
+from database import get_db
+from dependencies import get_current_user, require_permission
+from exports.templates import build_data_workbook, build_template_workbook
+from imports.license_import import EXPECTED_COLUMNS, validate_and_prepare
+from models.company import Company
+from models.license import License
+from models.user import User
+from schemas.license import (
     ImportErrorItem,
     ImportSummary,
     LicenseCreate,
