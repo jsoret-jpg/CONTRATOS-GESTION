@@ -20,7 +20,7 @@ from schemas.budget import (
     BudgetUpdate,
     CompensationCreate,
 )
-from app.services.budget_service import (
+from services.budget_service import (
     compute_budget_figures,
     list_annual_budgets,
     query_budgets,
