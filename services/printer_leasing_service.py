@@ -3,7 +3,7 @@ from decimal import Decimal
 from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
-from app.models.printer_leasing import (
+from models.printer_leasing import (
     CostCenter,
     PecuariaCompany,
     PrinterAllocation,
