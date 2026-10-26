@@ -3,7 +3,7 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, computed_field, field_validator
 
-from app.services.monthly_payment_service import compute_estado, compute_porcentaje
+from services.monthly_payment_service import compute_estado, compute_porcentaje
 
 
 class MonthlyPaymentBase(BaseModel):
