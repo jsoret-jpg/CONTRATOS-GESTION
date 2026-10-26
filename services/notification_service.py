@@ -3,15 +3,15 @@ from decimal import Decimal
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.budget import Budget
-from app.models.contract import Contract
-from app.models.invoice import Invoice
-from app.models.monthly_payment import MonthlyPayment
-from app.models.notification import Notification
-from app.models.servicio_producto import ServicioProducto
-from app.models.solped import Solped
-from app.services.budget_service import compute_budget_figures
-from app.utils.date_estado import compute_estado, compute_meses_faltantes
+from models.budget import Budget
+from models.contract import Contract
+from models.invoice import Invoice
+from models.monthly_payment import MonthlyPayment
+from models.notification import Notification
+from models.servicio_producto import ServicioProducto
+from models.solped import Solped
+from services.budget_service import compute_budget_figures
+from utils.date_estado import compute_estado, compute_meses_faltantes
 
 UMBRAL_PRESUPUESTO_POR_AGOTARSE = Decimal("80")
 
