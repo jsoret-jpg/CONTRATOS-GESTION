@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import get_current_user
-from app.schemas.dashboard import DashboardSummary, GlobalInvoiceOut
-from app.services.dashboard_service import build_summary, query_global_invoices
+from database import get_db
+from dependencies import get_current_user
+from schemas.dashboard import DashboardSummary, GlobalInvoiceOut
+from services.dashboard_service import build_summary, query_global_invoices
 
 router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 
