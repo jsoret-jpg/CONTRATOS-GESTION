@@ -2,10 +2,10 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import require_permission
-from app.models.provider import Provider
-from app.schemas.provider import ProviderCreate, ProviderOut
+from database import get_db
+from dependencies import require_permission
+from models.provider import Provider
+from schemas.provider import ProviderCreate, ProviderOut
 
 router = APIRouter(prefix="/providers", tags=["providers"])
 
