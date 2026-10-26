@@ -2,10 +2,10 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import require_permission
-from app.models.servicio_producto import ServicioProducto
-from app.schemas.servicio_producto import ServicioProductoCreate, ServicioProductoOut, ServicioProductoUpdate
+from database import get_db
+from dependencies import require_permission
+from models.servicio_producto import ServicioProducto
+from schemas.servicio_producto import ServicioProductoCreate, ServicioProductoOut, ServicioProductoUpdate
 
 router = APIRouter(prefix="/servicios-productos", tags=["servicios-productos"])
 
