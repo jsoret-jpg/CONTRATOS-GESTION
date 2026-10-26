@@ -2,9 +2,9 @@ import pandas as pd
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.imports.common import clean_str
-from app.models.printer_leasing import CostCenter, PecuariaCompany
-from app.utils.ceco_resolver import resolve_company_name_from_ceco
+from imports.common import clean_str
+from models.printer_leasing import CostCenter, PecuariaCompany
+from utils.ceco_resolver import resolve_company_name_from_ceco
 
 EXPECTED_COLUMNS = ["nombre", "proceso"]
 
