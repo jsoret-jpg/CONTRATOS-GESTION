@@ -12,8 +12,8 @@ from schemas.notification import (
     NotificationSummary,
     SendEmailResult,
 )
-from app.services.email_service import build_digest, send_email
-from app.services.notification_service import generate_alerts
+from services.email_service import build_digest, send_email
+from services.notification_service import generate_alerts
 
 router = APIRouter(prefix="/notifications", tags=["notifications"])
 
