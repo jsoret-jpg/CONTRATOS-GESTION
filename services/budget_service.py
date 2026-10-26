@@ -3,10 +3,10 @@ from decimal import Decimal
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.budget import Budget, BudgetMovement
-from app.models.invoice import Invoice
-from app.models.servicio_producto import ServicioProducto
-from app.models.solped import Solped
+from models.budget import Budget, BudgetMovement
+from models.invoice import Invoice
+from models.servicio_producto import ServicioProducto
+from models.solped import Solped
 
 
 def query_budgets(
