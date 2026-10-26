@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.config import settings
-from app.routers import (
+from config import settings
+from routers import (
     auth,
     budgets,
     companies,
