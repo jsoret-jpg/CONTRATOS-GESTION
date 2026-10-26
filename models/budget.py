@@ -4,7 +4,7 @@ from decimal import Decimal
 from sqlalchemy import Date, DateTime, ForeignKey, Integer, Numeric, String, Text, UniqueConstraint, func
 from sqlalchemy.orm import Mapped, mapped_column
 
-from app.database import Base
+from database import Base
 
 
 class Budget(Base):
