@@ -14,4 +14,4 @@ RUN mkdir -p /app/storage
 
 EXPOSE 10000
 
-CMD ["sh", "-c", "uvicorn main:app --app-dir /app --host 0.0.0.0 --port ${PORT:-10000}"]
+CMD ["sh", "-c", "python -m uvicorn main:app --app-dir /app --host 0.0.0.0 --port ${PORT:-10000}"]
