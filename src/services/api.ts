@@ -1,8 +1,11 @@
-import axios from "axios";
+import axios from 'axios';
 
-export const api = axios.create({
-  baseURL: "/api",
+const api = axios.create({
+  // Reemplaza la URL que tengas por la de Render entre comillas:
+  baseURL: 'https://contratos-gestion.onrender.com', 
 });
+
+export default api;
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("access_token");
