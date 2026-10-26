@@ -8,10 +8,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 # ... (resto de tu Dockerfile igual) ...
 
-COPY . .
-
-RUN mkdir -p /app/storage
-
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir uvicorn fastapi gunicorn && \
+    pip install --no-cache-dir -r requirements.txt
 EXPOSE 10000
 
 CMD ["sh", "-c", "python -m uvicorn main:app --app-dir /app --host 0.0.0.0 --port ${PORT:-10000}"]
