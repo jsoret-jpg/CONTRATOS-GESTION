@@ -23,8 +23,8 @@ from schemas.computer_leasing import (
     ImportErrorItem,
     ImportSummary,
 )
-from app.services.computer_leasing_service import query_computer_leasing
-from app.utils.renovacion_calculator import (
+from services.computer_leasing_service import query_computer_leasing
+from utils.renovacion_calculator import (
     compute_dias_para_renovacion,
     compute_renovacion_estado,
     compute_renovacion_texto,
