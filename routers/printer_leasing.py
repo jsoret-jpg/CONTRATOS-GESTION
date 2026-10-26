@@ -21,8 +21,8 @@ from models.printer_leasing import (
     PrinterConsumptionCompany,
     PrinterInvoice,
 )
-from app.utils.ceco_resolver import resolve_company_name_from_ceco
-from app.schemas.printer_leasing import (
+from utils.ceco_resolver import resolve_company_name_from_ceco
+from schemas.printer_leasing import (
     AllocationSummary,
     CostCenterCreate,
     CostCenterOut,
@@ -39,7 +39,7 @@ from app.schemas.printer_leasing import (
     PrinterInvoiceOut,
     PrinterInvoiceUpdate,
 )
-from app.services.printer_leasing_service import (
+from services.printer_leasing_service import (
     compute_allocation,
     query_allocations,
     query_consumption,
