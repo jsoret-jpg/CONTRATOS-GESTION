@@ -1,7 +1,7 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.license import License
+from models.license import License
 
 
 def query_licenses(
