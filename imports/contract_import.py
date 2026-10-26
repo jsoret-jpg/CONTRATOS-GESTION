@@ -13,9 +13,9 @@ from app.imports.common import (
     parse_decimal_flexible,
     parse_int_flexible,
 )
-from app.models.company import Company
-from app.models.contract import Contract
-from app.models.provider import Provider
+from models.company import Company
+from models.contract import Contract
+from models.provider import Provider
 
 EXPECTED_COLUMNS = [
     "numero_contrato",
