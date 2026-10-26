@@ -2,13 +2,13 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import require_permission
-from app.models.module import Module
-from app.models.permission import Permission
-from app.models.role import Role
-from app.models.role_module_permission import RoleModulePermission
-from app.schemas.role import ModuleOut, PermissionOut, RoleModulePermissionOut, RoleOut, RolePermissionsUpdate
+from database import get_db
+from dependencies import require_permission
+from models.module import Module
+from models.permission import Permission
+from models.role import Role
+from models.role_module_permission import RoleModulePermission
+from schemas.role import ModuleOut, PermissionOut, RoleModulePermissionOut, RoleOut, RolePermissionsUpdate
 
 router = APIRouter(prefix="/roles", tags=["roles"])
 
