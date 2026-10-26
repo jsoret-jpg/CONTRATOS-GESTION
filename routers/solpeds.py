@@ -29,8 +29,8 @@ from schemas.solped import (
     SolpedSummary,
     SolpedUpdate,
 )
-from app.services.solped_service import query_solpeds
-from app.services.budget_service import register_solped_execution
+from services.solped_service import query_solpeds
+from services.budget_service import register_solped_execution
 
 router = APIRouter(prefix="/solpeds", tags=["solpeds"])
 
