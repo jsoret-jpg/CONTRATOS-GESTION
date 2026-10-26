@@ -6,8 +6,8 @@ import pandas as pd
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.imports.common import clean_str, parse_decimal_flexible, parse_int_flexible
-from app.models.printer_leasing import CostCenter, PrinterConsumption
+from imports.common import clean_str, parse_decimal_flexible, parse_int_flexible
+from models.printer_leasing import CostCenter, PrinterConsumption
 
 EXPECTED_COLUMNS = ["centro_costo", "usuario", "proceso", "anio", "mes", "consumo"]
 
