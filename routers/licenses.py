@@ -24,7 +24,7 @@ from schemas.license import (
     LicenseTypePriceUpdateResult,
     LicenseUpdate,
 )
-from app.services.license_service import query_licenses
+from services.license_service import query_licenses
 
 router = APIRouter(prefix="/licenses", tags=["licenses"])
 
