@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models.company import Company
-from app.schemas.company import CompanyOut
+from database import get_db
+from models.company import Company
+from schemas.company import CompanyOut
 
 router = APIRouter(prefix="/companies", tags=["companies"])
 
