@@ -1,7 +1,7 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.monthly_payment import MonthlyPayment
+from models.monthly_payment import MonthlyPayment
 
 # Checklist de 3 pasos según el requerimiento: SOLPED registrada, Factura
 # registrada y Factura pagada. Los campos "solped_subida" y "paso_a_registro"
