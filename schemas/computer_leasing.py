@@ -3,7 +3,7 @@ from decimal import Decimal
 
 from pydantic import BaseModel, ConfigDict, computed_field
 
-from app.utils.renovacion_calculator import (
+from utils.renovacion_calculator import (
     compute_dias_para_renovacion,
     compute_renovacion_estado,
     compute_renovacion_texto,
