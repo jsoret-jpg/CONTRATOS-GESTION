@@ -26,7 +26,7 @@ from schemas.contract import (
     ImportErrorItem,
     ImportSummary,
 )
-from app.services.contract_service import (
+from services.contract_service import (
     compute_contract_estado,
     compute_meses_faltantes,
     query_contracts,
