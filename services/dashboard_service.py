@@ -4,15 +4,15 @@ from decimal import Decimal
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.budget import Budget
-from app.models.company import Company
-from app.models.contract import Contract
-from app.models.invoice import Invoice
-from app.models.monthly_payment import MonthlyPayment
-from app.models.provider import Provider
-from app.models.solped import Solped
-from app.services.budget_service import compute_budget_figures
-from app.services.contract_service import compute_contract_estado
+from models.budget import Budget
+from models.company import Company
+from models.contract import Contract
+from models.invoice import Invoice
+from models.monthly_payment import MonthlyPayment
+from models.provider import Provider
+from models.solped import Solped
+from services.budget_service import compute_budget_figures
+from services.contract_service import compute_contract_estado
 
 
 def build_summary(db: Session, anio: int | None = None) -> dict:
