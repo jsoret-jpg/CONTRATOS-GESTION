@@ -4,12 +4,12 @@ from jose import JWTError
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models.module import Module
-from app.models.permission import Permission
-from app.models.role_module_permission import RoleModulePermission
-from app.models.user import User
-from app.security import decode_token
+from database import get_db
+from models.module import Module
+from models.permission import Permission
+from models.role_module_permission import RoleModulePermission
+from models.user import User
+from security import decode_token
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
