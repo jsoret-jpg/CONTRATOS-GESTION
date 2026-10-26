@@ -2,10 +2,10 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import require_permission
-from app.models.notification import Notification, NotificationRecipient
-from app.schemas.notification import (
+from database import get_db
+from dependencies import require_permission
+from models.notification import Notification, NotificationRecipient
+from schemas.notification import (
     NotificationOut,
     NotificationRecipientCreate,
     NotificationRecipientOut,
